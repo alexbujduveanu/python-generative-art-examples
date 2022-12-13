@@ -23,10 +23,10 @@ def main():
         for b_color in background_colors:
             # Check to see they don't conflict
             if p_color != b_color:
-                create_and_display_image(p_color, b_color)
+                create_image(p_color, b_color)
                 
 # Generate and display image before then saving it into a file
-def create_and_display_image(p_color, b_color):
+def create_image(p_color, b_color):
     if DEBUG_MODE:
         print('Generating image for primary color {p_color} and background color {b_color}')
     
